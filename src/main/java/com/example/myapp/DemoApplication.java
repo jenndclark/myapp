@@ -11,7 +11,10 @@ public class DemoApplication {
 	@RequestMapping("/")
 	@ResponseBody
 	String home() {
-		return "To-Do-List:\n1.Complete Tech Exercise\n2. Work on research paper\n3. Pass App project";
+		return "To-Do-List:";
+		return "1.Complete Tech Exercise";
+		return "2. Work on research paper";
+		return "3. Pass App project";
 	}
 	public static void main(String[] args) {
 		SpringApplication.run(DemoApplication.class, args);
